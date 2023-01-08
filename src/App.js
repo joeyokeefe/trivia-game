@@ -1,26 +1,36 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CategoryColumn from "./components/CategoryColumn/CategoryColumn";
+import { nanoid } from "nanoid";
 
 function App() {
+  //Setting state for variables
   const [data, setData] = useState([]);
-  const [title, setTitle] = useState("");
+  const [isGameStarted, setIsGameStarted] = useState(false);
 
-  function handleCall() {
-    fetch(
-      `https://jservice.io/api/categories?count=6&offset=${Math.floor(
-        Math.random() * 3000
-      )}`
-    )
-      .then((res) => res.json())
-      .then((data) => setData(data))
-      .then(() => setTitle(data[0].title));
+  //Retrieving random category and clues from jService
+  useEffect(() => {
+    const categoryArr = [];
+    for (let i = 0; i < 6; i++) {
+      fetch(
+        `https://jservice.io/api/category?id=${Math.floor(
+          Math.random() * 3000
+        )}`
+      )
+        .then((res) => res.json())
+        .then((data) => categoryArr.push(data));
+    }
+    setData(categoryArr);
+  }, []);
+
+  function handleGameStart() {
+    setIsGameStarted(true);
   }
 
   return (
-    <div>
-      <button onClick={handleCall}>Button</button>
-      <CategoryColumn data={data} title={title} />
+    <div className="gameBoard">
+      <button onClick={handleGameStart}>Start</button>
+      {isGameStarted && <CategoryColumn data={data} key={nanoid()} />}
     </div>
   );
 }

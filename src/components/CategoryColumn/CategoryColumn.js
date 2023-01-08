@@ -1,12 +1,11 @@
+import "./CategoryColumn.css";
+
 export default function CategoryColumn(props) {
-  return (
-    <div>
-      <div>{props.title}</div>
-      <div>200: </div>
-      <div>400: </div>
-      <div>600: </div>
-      <div>800: </div>
-      <div>1000: </div>
+  const cluesArr = props.data[0].clues.map((clue) => (
+    <div key={clue.id} className="questionBox">
+      {clue.value}: {clue.question}
     </div>
-  );
+  ));
+  cluesArr.length = 5;
+  return <div>{cluesArr}</div>;
 }
