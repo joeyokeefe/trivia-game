@@ -2,4 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 6.25rem;
+}
+
+.startButton {
+  position: relative;
+  top: 18rem;
+  height: 6.25rem;
+  width: 12.5rem;
+  font-family: "Allerta", sans-serif;
+  font-size: 2.5rem;
+  border-radius: 2.5rem;
+  color: #3B4252;
+  border: 5px black solid;
+}
+
+.startButton:hover{
+  cursor: pointer;
+  background-color: #8ed081;
 }

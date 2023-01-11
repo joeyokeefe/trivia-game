@@ -1,5 +1,35 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #3B4252;
+}
+
 .questionBox {
-  border: 0.0625rem black solid;
+  outline: 0.0625rem black solid;
   width: 14rem;
   height: 8rem;
+  font-family: "Allerta", sans-serif;
+  text-align: center;
+  color: #8ed081;
 }
+
+.questionBox:Hover{
+  outline: 5px solid #8ed081;
+  transition: ease 1ms;
+  cursor: pointer;
+}
+
+.categoryTitle {
+  height: 6.25rem;
+  width: 14rem;
+  outline: 0.0625rem black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Allerta", sans-serif;
+  font-size: 1.875rem;
+}
+

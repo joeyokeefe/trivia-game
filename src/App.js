@@ -10,7 +10,6 @@ function App() {
 
   //Retrieving random category and clues from jService
   useEffect(() => {
-    const categoryArr = [];
     for (let i = 0; i < 6; i++) {
       fetch(
         `https://jservice.io/api/category?id=${Math.floor(
@@ -18,19 +17,26 @@ function App() {
         )}`
       )
         .then((res) => res.json())
-        .then((data) => categoryArr.push(data));
+        .then((data) => setData((prevData) => [...prevData, data]));
     }
-    setData(categoryArr);
   }, []);
 
   function handleGameStart() {
     setIsGameStarted(true);
   }
 
+  const columnsArr = data.map((col, i) => {
+    if (i < 6) {
+      return <CategoryColumn key={nanoid()} data={col} />;
+    }
+  });
+
   return (
     <div className="gameBoard">
-      <button onClick={handleGameStart}>Start</button>
-      {isGameStarted && <CategoryColumn data={data} key={nanoid()} />}
+      {!isGameStarted && (
+      <button onClick={handleGameStart} className="startButton">Start</button>
+      )}
+      {isGameStarted && columnsArr}
     </div>
   );
 }
