@@ -2,8 +2,9 @@
   color: white;
 }
 
-body {
-  background-color: #3B4252;
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .questionBox {
@@ -11,20 +12,36 @@ body {
   width: 14rem;
   height: 8rem;
   font-family: "Allerta", sans-serif;
+  font-size: 1.5rem;
   text-align: center;
   color: #8ed081;
+  background-color: #3b4252;
 }
 
-.questionBox:Hover{
-  outline: 5px solid #8ed081;
+.questionBox:hover {
+  border: 0.3125rem solid #8ed081;
   transition: ease 1ms;
   cursor: pointer;
+}
+
+.clickedClue {
+  background-color: #3b4252;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 3.75rem;
+  color: white;
+  padding: 18.75rem;
 }
 
 .categoryTitle {
   height: 6.25rem;
   width: 14rem;
-  outline: 0.0625rem black solid;
+  outline: 0.1875rem black solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,4 +49,3 @@ body {
   font-family: "Allerta", sans-serif;
   font-size: 1.875rem;
 }
-

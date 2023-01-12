@@ -1,3 +1,7 @@
+body {
+  background-color: #3b4252;
+}
+
 .gameBoard {
   display: flex;
   justify-content: center;
@@ -14,11 +18,13 @@
   font-family: "Allerta", sans-serif;
   font-size: 2.5rem;
   border-radius: 2.5rem;
-  color: #3B4252;
-  border: 5px black solid;
+  color: #3b4252;
+  border: 0.3125rem black solid;
 }
 
-.startButton:hover{
+.startButton:hover {
   cursor: pointer;
   background-color: #8ed081;
+  color: white;
+  text-shadow: 0.125rem 0.125rem #3b4252;
 }
