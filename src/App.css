@@ -1,5 +1,22 @@
 body {
   background-color: #3b4252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#mainTitle {
+  font-size: 9.375rem;
+}
+
+#authorCredit {
+  font-size: 1.25rem;
+  margin-top: 9.375rem;
+}
+
+#dataCredit {
+  font-size: 1rem;
 }
 
 .gameBoard {
@@ -11,8 +28,6 @@ body {
 }
 
 .startButton {
-  position: relative;
-  top: 18rem;
   height: 6.25rem;
   width: 12.5rem;
   font-family: "Allerta", sans-serif;

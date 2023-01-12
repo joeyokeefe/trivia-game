@@ -16,6 +16,7 @@
   text-align: center;
   color: #8ed081;
   background-color: #3b4252;
+  padding: 10px 0px;
 }
 
 .questionBox:hover {
@@ -48,4 +49,6 @@
   text-align: center;
   font-family: "Allerta", sans-serif;
   font-size: 1.875rem;
+  outline-offset: -2px;
+  padding: 10px 0px;
 }

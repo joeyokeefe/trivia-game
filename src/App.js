@@ -73,9 +73,14 @@ function App() {
   return (
     <div className="gameBoard">
       {!isGameStarted && (
-        <button onClick={handleGameStart} className="startButton">
-          Start
-        </button>
+        <div>
+          <h1 id="mainTitle">Endangerment!</h1>
+          <button onClick={handleGameStart} className="startButton">
+            Start
+          </button>
+          <h2 id="authorCredit">Created by Mike Proscia and Joe O'Keefe</h2>
+          <h3 id="dataCredit">Made with jService API</h3>
+        </div>
       )}
       {isGameStarted && columnsArr}
     </div>
