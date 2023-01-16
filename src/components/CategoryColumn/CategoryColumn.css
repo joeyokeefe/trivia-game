@@ -14,8 +14,8 @@
   font-family: "Allerta", sans-serif;
   font-size: 1.5rem;
   text-align: center;
-  color: #8ed081;
-  background-color: #3b4252;
+  color: white;
+  background-color: #34657c;
   padding: 10px 0px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .clickedClue {
-  background-color: #3b4252;
+  background-color: #34657c;
   position: fixed;
   top: 0;
   left: 0;
@@ -51,4 +51,5 @@
   font-size: 1.875rem;
   outline-offset: -2px;
   padding: 10px 0px;
+  background-color: #178b94;
 }

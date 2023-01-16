@@ -4,6 +4,15 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: radial-gradient(
+    circle,
+    #3b4252,
+    #34657c,
+    #178b94,
+    #3eb094,
+    #8ed081
+  );
+  height: 100vh;
 }
 
 #mainTitle {
@@ -24,7 +33,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 6.25rem;
 }
 
 .startButton {
