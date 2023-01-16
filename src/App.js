@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import CategoryColumn from "./components/CategoryColumn/CategoryColumn";
 import { nanoid } from "nanoid";
-import svg from "./layered-waves-haikei.svg";
 
 function App() {
   //Setting state for variables
