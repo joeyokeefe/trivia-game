@@ -9,14 +9,13 @@
 
 .questionBox {
   outline: 0.0625rem black solid;
-  width: 14rem;
+  width: 16rem;
   height: 8rem;
   font-family: "Allerta", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   color: white;
   background-color: #34657c;
-  padding: 10px 0px;
 }
 
 .questionBox:hover {
@@ -25,7 +24,7 @@
   cursor: pointer;
 }
 
-.clickedClue {
+.questionPopup {
   background-color: #34657c;
   position: fixed;
   top: 0;
@@ -36,7 +35,26 @@
   width: 100%;
   font-size: 3.75rem;
   color: white;
-  padding: 18.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.clickedClue {
+  font-size: 3.75rem;
+  color: white;
+  background-color: #34657c;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 6rem;
 }
 
 .categoryTitle {
@@ -49,7 +67,52 @@
   text-align: center;
   font-family: "Allerta", sans-serif;
   font-size: 1.875rem;
-  outline-offset: -2px;
-  padding: 10px 0px;
+  outline-offset: -0.125rem;
   background-color: #178b94;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 0.625rem 1rem;
+}
+
+.answer {
+  color: white;
+  z-index: 999;
+  font-size: 3.75rem;
+  padding-top: 5rem;
+}
+
+.answerButton {
+  z-index: 1000;
+  background-color: #178b94;
+  height: 3.125rem;
+  width: 12.5rem;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 2.8125rem;
+  cursor: pointer;
+  font-family: "Allerta", sans-serif;
+  border: solid 0.25rem black;
+}
+
+.answerButton:hover {
+  background-color: #8ed081;
+}
+
+.goBackButton {
+  z-index: 1001;
+  background-color: #178b94;
+  height: 3.125rem;
+  width: 12.5rem;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 2.8125rem;
+  cursor: pointer;
+  font-family: "Allerta", sans-serif;
+  border: solid 0.25rem black;
+  margin-top: 4rem;
+}
+
+.goBackButton:hover {
+  background-color: #8ed081;
 }

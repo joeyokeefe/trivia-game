@@ -33,13 +33,32 @@ export default function CategoryColumn(props) {
       );
     } else {
       return (
-        <button
-          className={"clickedClue"}
-          onClick={(e) => props.handleIsClicked(e.target.dataset.key)}
-          data-key={clue.question}
-        >
-          {clue.question}
-        </button>
+        <div className="questionPopup">
+          <div className="questionContainer">
+            <div className={"clickedClue"} data-key={clue.question}>
+              {clue.question}
+            </div>
+            <button
+              onClick={(e) =>
+                props.handleIsAnswerRevealed(e.target.dataset.key)
+              }
+              className="answerButton"
+              data-key={clue.question}
+            >
+              Answer
+            </button>
+            {clue.isAnswerRevealed && (
+              <div className="answer">{clue.answer}</div>
+            )}
+            <button
+              className="goBackButton"
+              onClick={(e) => props.handleIsClicked(e.target.dataset.key)}
+              data-key={clue.question}
+            >
+              Go Back
+            </button>
+          </div>
+        </div>
       );
     }
   });
