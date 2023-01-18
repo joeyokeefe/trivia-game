@@ -64,10 +64,14 @@ function App() {
       const newArr = prevResults.map((datum) => ({
         ...datum,
         clues: datum.clues.map((clue) => {
-          return {
-            ...clue,
-            isAnswerRevealed: !clue.isAnswerRevealed,
-          };
+          if (input === clue.question) {
+            return {
+              ...clue,
+              isAnswerRevealed: !clue.isAnswerRevealed,
+            };
+          } else {
+            return clue;
+          }
         }),
       }));
       return newArr;
