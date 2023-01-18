@@ -21,7 +21,7 @@ body {
 
 #authorCredit {
   font-size: 1.25rem;
-  margin-top: 9.375rem;
+  margin-top: 5rem;
 }
 
 #dataCredit {
@@ -33,6 +33,30 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+#teamSelectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.125rem;
+  margin-top: -1.875rem;
+}
+
+#teamSelectHeader {
+  font-size: 2rem;
+}
+
+#teamSelectDropdown {
+  color: black;
+  height: 36px;
+  font-family: "Allerta", sans-serif;
+}
+
+#teamSelectDropdown option {
+  color: black;
+  font-family: "Allerta", sans-serif;
 }
 
 .startButton {
@@ -50,4 +74,10 @@ body {
   background-color: #8ed081;
   color: white;
   text-shadow: 0.125rem 0.125rem #3b4252;
+}
+
+.scoreBoardContainer {
+  z-index: 1010;
+  display: flex;
+  justify-content: space-evenly;
 }
