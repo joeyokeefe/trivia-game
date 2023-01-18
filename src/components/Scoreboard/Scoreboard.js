@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Scoreboard.css";
 
 export default function Scoreboard(props) {
-  const [playerName, setPlayerName] = useState(`Player ${props.i}`);
+  const [playerName, setPlayerName] = useState(`Player ${props.i + 1}`);
 
   return (
     <div>
