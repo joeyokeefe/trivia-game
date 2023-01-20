@@ -123,3 +123,33 @@
 .goBackButton:hover {
   background-color: #8ed081;
 }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .categoryTitle {
+    width: 4.5rem;
+    font-size: 1rem;
+  }
+  .questionBox {
+    width: 6.5rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+
+  .clickedClue {
+    font-size: 2rem;
+  }
+
+  .answer {
+    font-size: 2rem;
+  }
+
+  .answerButton {
+    height: 3rem;
+    width: 10rem;
+  }
+
+  .goBackButton {
+    height: 3rem;
+    width: 10rem;
+  }
+}
