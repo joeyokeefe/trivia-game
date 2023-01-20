@@ -50,8 +50,9 @@ body {
 
 #teamSelectDropdown {
   color: black;
-  height: 36px;
+  height: 2.25rem;
   font-family: "Allerta", sans-serif;
+  border-radius: 0.625rem;
 }
 
 #teamSelectDropdown option {
@@ -80,4 +81,5 @@ body {
   z-index: 1010;
   display: flex;
   justify-content: space-evenly;
+  position: sticky;
 }

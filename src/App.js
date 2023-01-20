@@ -19,10 +19,7 @@ function App() {
         )}`
       )
         .then((res) => res.json())
-        .then((data) => {
-          setData((prevData) => [...prevData, data]);
-          return;
-        });
+        .then((data) => setData((prevData) => [...prevData, data]));
     }
   }, []);
 
@@ -36,7 +33,10 @@ function App() {
         isAnswerRevealed: false,
       })),
     }));
-    setResults(newArr);
+    const arr = newArr.filter((result) => result.clues.length >= 5);
+    arr.length = 6;
+    arr.forEach((obj) => (obj.clues.length = 5));
+    setResults(arr);
   }, [data]);
 
   function handleGameStart() {
@@ -83,18 +83,15 @@ function App() {
     });
   }
 
-  const filteredResults = results.filter((result) => result.clues.length >= 5);
-  const columnsArr = filteredResults.map((result, i) => {
-    if (i < 6) {
-      return (
-        <CategoryColumn
-          key={result.title}
-          data={result}
-          handleIsClicked={handleIsClicked}
-          handleIsAnswerRevealed={handleIsAnswerRevealed}
-        />
-      );
-    }
+  const columnsArr = results.map((result) => {
+    return (
+      <CategoryColumn
+        key={result.title}
+        data={result}
+        handleIsClicked={handleIsClicked}
+        handleIsAnswerRevealed={handleIsAnswerRevealed}
+      />
+    );
   });
 
   function updatePlayerCount(input) {

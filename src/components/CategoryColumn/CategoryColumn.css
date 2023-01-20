@@ -93,6 +93,9 @@
   cursor: pointer;
   font-family: "Allerta", sans-serif;
   border: solid 0.25rem black;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .answerButton:hover {
@@ -110,7 +113,9 @@
   cursor: pointer;
   font-family: "Allerta", sans-serif;
   border: solid 0.25rem black;
-  margin-top: 4rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
 }
 
 .goBackButton:hover {

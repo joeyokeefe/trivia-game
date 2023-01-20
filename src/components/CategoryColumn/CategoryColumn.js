@@ -1,8 +1,6 @@
 import "./CategoryColumn.css";
 
 export default function CategoryColumn(props) {
-  props.data.clues.length = 5;
-
   const cluesArr = props.data.clues.map((clue, i) => {
     function generateStyles() {
       if (clue.isClicked) {
