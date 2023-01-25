@@ -124,32 +124,129 @@
   background-color: #8ed081;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
 @media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
   .categoryTitle {
-    width: 4.5rem;
-    font-size: 1rem;
+    height: 3rem;
+    width: 1.8rem;
+    text-align: center;
+    font-size: 0.6rem;
   }
   .questionBox {
-    width: 6.5rem;
-    height: 5rem;
+    outline: 0.0625rem black solid;
+    width: 3.8rem;
+    height: 4rem;
     font-size: 1rem;
+    text-align: center;
   }
 
   .clickedClue {
-    font-size: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #34657c;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -18rem;
   }
-
   .answer {
-    font-size: 2rem;
+    font-size: 1rem;
   }
-
   .answerButton {
     height: 3rem;
-    width: 10rem;
+    width: 5rem;
+    font-size: 0.7rem;
   }
 
   .goBackButton {
     height: 3rem;
-    width: 10rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .categoryTitle {
+    height: 3rem;
+    width: 1.8rem;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .questionBox {
+    outline: 0.0625rem black solid;
+    width: 3.8rem;
+    height: 4rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .clickedClue {
+    font-size: 1rem;
+    color: white;
+    background-color: #34657c;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -18rem;
+  }
+  .answer {
+    font-size: 1rem;
+  }
+  .answerButton {
+    height: 3rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
+  .goBackButton {
+    height: 3rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 900px) and (orientation: landscape) {
+  .categoryTitle {
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .questionBox {
+    outline: 0.0625rem black solid;
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .clickedClue {
+    font-size: 1rem;
+    color: white;
+    background-color: #34657c;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -8rem;
+  }
+  .answer {
+    font-size: 1rem;
+  }
+  .answerButton {
+    height: 3rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
+  .goBackButton {
+    height: 3rem;
+    width: 5rem;
+    font-size: 0.7rem;
   }
 }
