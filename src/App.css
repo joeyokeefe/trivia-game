@@ -68,6 +68,7 @@ body {
   border-radius: 2.5rem;
   color: #3b4252;
   border: 0.3125rem black solid;
+  text-align: center;
 }
 
 .startButton:hover {
