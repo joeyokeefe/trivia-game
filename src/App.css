@@ -97,7 +97,12 @@ body {
     width: 8rem;
   }
   .scoreBoardContainer {
-    margin-top: 6rem;
+    margin-top: 4rem;
+    padding-bottom: -8rem;
+  }
+  .scoreBoardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
