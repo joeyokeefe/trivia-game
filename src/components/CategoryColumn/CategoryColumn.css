@@ -124,7 +124,42 @@
   background-color: #8ed081;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1400px) {
+  .categoryTitle {
+    height: 4rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .questionBox {
+    outline: 0.0625rem black solid;
+    width: 7rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .clickedClue {
+    font-size: 3rem;
+    color: white;
+    background-color: #34657c;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -18rem;
+  }
+  .answer {
+    font-size: 3rem;
+  }
+  .answerButton {
+    width: 8rem;
+    font-size: 1.2rem;
+  }
+
+  .goBackButton {
+    width: 8rem;
+    font-size: 1.2rem;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -246,7 +281,7 @@
 }
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 900px) and (orientation: landscape) {
+@media screen and (max-device-width: 920px) and (orientation: landscape) {
   .categoryTitle {
     height: 2rem;
     width: 5rem;
@@ -267,8 +302,9 @@
     background-color: #34657c;
     text-align: center;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     margin-top: -8rem;
+    margin-bottom: -1rem;
   }
   .answer {
     font-size: 1rem;

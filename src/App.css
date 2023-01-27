@@ -85,7 +85,23 @@ body {
   position: sticky;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1400px) {
+  #mainTitle {
+    font-size: 3rem;
+  }
+  .startButton {
+    font-size: 2rem;
+    height: 4rem;
+    width: 8rem;
+  }
+  .scoreBoardContainer {
+    margin-top: 4rem;
+    padding-bottom: -8rem;
+  }
+  .scoreBoardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -128,12 +144,8 @@ body {
   }
 }
 
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-}
-
 /* iPhone Landscape */
-@media screen and (max-device-width: 900px) and (orientation: landscape) {
+@media screen and (max-device-width: 920px) and (orientation: landscape) {
   body {
     height: 75vh;
   }
@@ -153,7 +165,14 @@ body {
     top: 100px;
   }
   .scoreBoardContainer {
-    display: flex;
+    margin-top: 6.25rem;
+    bottom: 0;
     gap: 1rem;
+  }
+  .scoreBoardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 }
